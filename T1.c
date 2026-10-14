@@ -2,13 +2,11 @@
 int Ftask();
 int Stask();
 int Ttask();
-int Hometask();
 int main()
 {
     Ftask();
     Stask();
     Ttask();
-    Hometask();
     return 0;
 }
 int Ftask()
@@ -48,12 +46,4 @@ int Ttask()
     return 0;
 }
 
-int Hometask()
-{
-    int n, k;
-    printf("Введите удержание человека на воде в мс\n");
-    scanf("%d",&n);
-    printf("Введите длину шага в сантиметрах\n");
-    scanf("%d", &k);
-    printf("Скорость ходьбы по воде как по суше %.2f М/С\n",(10.0*k)/n);
-}
+
