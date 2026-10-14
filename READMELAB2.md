@@ -24,6 +24,8 @@
 
 ### Блок-схема
 
+![BSHM_L2.png](https://github.com/Skochergin21/Lab2/blob/main/BSHM_L2.png)
+
 
 ## Реализация программы
 
