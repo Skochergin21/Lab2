@@ -32,9 +32,13 @@
 ```c
 #include <stdio.h>
 
-int main()
-{
+int dz();
+int main(){
+    dz();
+}
 
+int dz()
+{
     double X = 250.0;
     double L = 70.0; 
 
