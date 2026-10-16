@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <locale.h>
 int Ftask();
 int Stask();
 int Ttask();
 int main()
 {
+    setlocale(LC_ALL, ".UTF-8")
     Ftask();
     Stask();
     Ttask();
@@ -34,8 +36,8 @@ int Stask()
     printf("TASK2\n");
     printf("Сейчас %d часа %d минуты 00 секунд\n", n, k);
     printf("Идет %d минута суток\n",n*60+k);
-    printf("До полуночи осталось %d часов и %d минут\n", 12-n-1, 60-k );
-    printf("С 8.00 прошло %d секунд\n", (((n+4)*60)+k)*60);
+    printf("До полуночи осталось %d часов и %d минут\n", 24-n-1, 60-k );
+    printf("С 8.00 прошло %d секунд\n", (((n-8)*60)+k)*60);
     printf("Текущий час  = %.3f суток  и текущая минута =  %.2f часа\n", n/24.0, k/60.0);
     return 0;
 } 
